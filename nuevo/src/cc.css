@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow-x: hidden;
+    font-size: 62.5%;
+}
+header{
+    width: 100vw;
+}
+nav{
+    position:sticky;
+    list-style: none;
+    top: 0px;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    background: linear-gradient(to right,#F5B335, #C54B38);
+    align-items: center;
+    height: 6rem;
+}
+.cont_img{
+    margin-left: 1rem;
+    align-items: center;
+}
+.cont_img img{
+    width: 11rem;
+    height: 6.5rem;
+}
+.cont_menu{
+    overflow: hidden;
+    width:100%;
+}
+.cont_menu ul{
+    align-items: center;
+    list-style: none;
+    display:flex;
+    justify-content:space-around;
+}
+.cont_menu ul li{
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size:1.4rem;
+    margin:1rem; 
+}
+.cont_menu ul li:hover{
+    color: #585858 ;
+}
+.cont_menu a{
+    text-decoration: none;
+}
+.seccion-principal{
+    display: flex;
+    width: 100vw;
+    padding: 0px;
+    height:100vh;
+    background: linear-gradient(to bottom,#FFD700 2%, #FFA500, #FF6347 50%, #4B0082 90%, #191970 );
+    /*background-image: url("/src/fondoCC.jpg");*/
+}
+.main-section-description{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 4rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-self:center;
+    width: 50%;
+    color: white;
+}
+.main-section-description h1{
+    font-size: 4rem;
+    margin-bottom: 6rem;
+}
+.main-section-description p{
+    font-size: 2rem;
+    margin-bottom: 4rem;   
+}
+.main-section-description button{
+    font-weight: bold;
+    color: white;
+    border-color: #C54B38;
+    background-color: transparent;
+    height: 5rem;   
+    text-align: center;
+    border-radius: 50px;
+    align-self: center;
+    justify-self: center;
+    width: 13rem;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    box-shadow: none !important;   
+}
+.main-section-description button:hover{
+    background-color: #C54B38;
+    scale: 1.05;
+}
+.main-section-image{
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
+    height:40rem;
+}
+.main-section-image img{
+    width:100%;
+    height:25rem;
+    align-self:center;
+}
+.CabCaver{
+    width: 50%;
+    list-style: none;
+    position: absolute;
+    display:flex;
+    justify-self: end;
+    align-self:end;
+    align-items: end;
+}
+.CabCaver img{
+    margin-left: 3rem;
+    width: 9rem;
+    height: 9rem;
+}
+.cloud1 {
+    width: 100px;
+    height: 60px;
+    background-color: rgba(240, 240, 240, 0.443);
+    border-radius: 50px;
+    position: relative;
+    animation: moveCloud 15s linear infinite, puff 3s ease-in-out infinite;
+}
+.cloud2 {
+    width: 100px;
+    height: 60px;
+    background-color: rgba(240, 240, 240, 0.443);
+    border-radius: 50px;
+    position: relative;
+    animation: moveCloud 11s linear infinite, puff 3s ease-in-out infinite;
+}
+.cloud3 {
+    width: 100px;
+    height: 60px;
+    background-color: rgba(240, 240, 240, 0.443);
+    border-radius: 50px;
+    position: relative;
+    animation: moveCloud  19s linear infinite, puff 3s ease-in-out infinite;
+}
+.cloud4 {
+    width: 100px;
+    height: 60px;
+    background-color: rgba(240, 240, 240, 0.443);
+    border-radius: 50px;
+    position: relative;
+    animation: moveCloud  12s linear infinite, puff 3s ease-in-out infinite;
+}
+.cloud5 {
+    width: 100px;
+    height: 60px;
+    background-color: rgba(240, 240, 240, 0.443);
+    border-radius: 50px;
+    position: relative;
+    animation: moveCloud  14s linear infinite, puff 3s ease-in-out infinite;
+}
+.cont-nubes{
+    position: absolute;
+}
+.QuienesSomos{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    display:grid;
+    background-color: #F5B335;
+}
+.QuienesSomos h2{
+    color: #585858;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+.cont-quienes-somos{
+    display: flex;
+}
+.QuienesSomosDescrip{
+    display: grid;
+    align-items:center;
+    font-size: 1.8rem;
+    height: 40rem;
+}
+@keyframes moveCloudUpDown {
+    0%, 100% {
+      top: 0;
+    }
+    50% {
+      top: 50px;
+    }
+  }
+  @keyframes moveCloud {
+    0%, 100% {
+      left: -100px;
+    }
+    100% {
+      left: calc(100vw + 100px);
+    }
+  }
+  
+  @keyframes puff {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  
+  
+  
